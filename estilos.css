@@ -5,6 +5,32 @@
     font-family: 'Cinzel', serif;
 }
 
+.nav__color {
+    background-color: transparent;
+}
+
+.nav-link {
+    color: white;
+    font-size: 2rem;
+}
+
+.nav__acolor {
+    color: black;
+}
+
+.navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-toggler {color: white;}
+.navbar-toggler-icon{color: white;}
+
+.btn{margin: 1rem;}
+
+.form-floating{margin: 1rem;
+background-color: white;}
 
 /* --------------------- INDEX  ---------------------*/
 /* HEADER */
@@ -21,8 +47,7 @@
     background-size: contain;
     background-position: center;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+
 }
 
 /* NAVBAR */

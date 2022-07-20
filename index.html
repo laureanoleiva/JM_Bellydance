@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="JM Logo (1) (1).png" type="image/x-icon">
 
@@ -26,17 +29,46 @@
 </head>
 
 <body class="body">
-
     <header class="header">
-        <nav class="header__navbar">
-            <ul class="header__navbar--principal">
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="escuela.html">Escuela</a> </li>
-                <li><a href="ballet.html">Ballet</a> </li>
-                <li><a href="galeria.html">Galería</a> </li>
-                <li><a href="contacto.html">Contacto</a> </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg nav__color">
+            <div class="container-fluid d-flex justify-content-around">
+                <a class="navbar-brand" href="index.html">
+                    <nav class="navbar nav__color">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">
+                                <img src="/JM Logo (1) (1).png" alt="" width="45" height="45">
+                            </a>
+                        </div>
+                    </nav>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="escuela.html">ESCUELA</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="ballet.html">BALLET</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">GALERÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
+
         <h1 class="header__title">Julieta Marlene</h1>
         <h2 class="header__descripcion">Professional Bellydancer</h2>
 
