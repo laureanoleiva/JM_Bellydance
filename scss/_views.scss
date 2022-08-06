@@ -1,0 +1,311 @@
+/* BARRA DE NAVEGACIÓN */
+/* HOME */
+
+.navegation {
+    height: 0px;
+}
+
+.img__navbar:hover {
+    width: 65px;
+    height: 65px;
+}
+
+.nav__colorblack {
+    background-color: transparent;
+}
+
+.nav-link {
+    color: white;
+    font-size: 25px;
+    margin-right: 100px;
+
+    &:hover {
+        color: grey;
+        font-size: 26px;
+    }
+}
+
+.collapse {
+    justify-content: space-around;
+}
+
+.container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+/* ESCUELA */
+
+.nav__white {
+    @extend .nav-link;
+    color: black;
+
+    &:hover {
+        @extend .nav-link:hover;
+    }
+}
+
+/* -------------------------------------HOME-------------------------------------  */
+/*HEADER*/
+
+.index {
+    background-color: black;
+
+    &__header {
+        background-image: url(../resources/img/julimarlene.jpeg);
+        height: 100vh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        &--title {
+            color: azure;
+            text-align: center;
+            font-size: 150px;
+            font-family: 'Great Vibes', cursive;
+            font-weight: 500;
+            position: relative;
+            top: 50%;
+        }
+
+        &--subtitle {
+            color: azure;
+            text-align: center;
+            font-size: 45px;
+            font-weight: 100;
+            position: relative;
+            top: 50%;
+        }
+    }
+
+    &__text {
+        background-color: black;
+        background-image: url(../resources/img/fondo_index.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+        background-position: center;
+        height: 100%;
+        margin-top: 5rem;
+
+        &--title {
+            color: azure;
+            font-size: 40px;
+            margin: 10px;
+        }
+
+        &--description {
+            color: azure;
+            font-size: 20px;
+            text-align: justify;
+            margin: 10px;
+        }
+    }
+
+    /*FOOTER*/
+    &__footer {
+        background-image: linear-gradient(to bottom, black, grey);
+        padding-top: 2rem;
+
+
+        &--img {
+            height: 40px;
+            width: 40px;
+
+            &:hover {
+                height: 50px;
+                width: 50px;
+            }
+        }
+
+        &--h3 {
+            color: white;
+            margin-top: 50px;
+        }
+
+        &--col {
+            line-height: 100px;
+        }
+
+        &--text {
+            @extend .index__text--description;
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+
+    .list-group {
+        &-item-personal {
+            background-color: transparent;
+            color: white;
+        }
+
+        &__lineheight {
+            margin-top: 50px;
+        }
+
+        &-item:hover {
+            font-size: 20px;
+            color: pink;
+        }
+    }
+}
+
+.list-group-item {
+    @extend .list-group-item-personal
+}
+
+/* -------------------------------------BALLET-------------------------------------  */
+/* HOME */
+
+.ballet {
+    @extend .index__header;
+    background-color: white;
+    background-image: url(../resources/Ballet/fondoballet.jpg);
+
+    &--title {
+        @extend .index__header--title;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.486);
+        font-size: 100px;
+        top: 55%;
+    }
+
+    &--subtitle {
+        @extend .index__header--subtitle;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.486);
+        font-size: 30px;
+        top: 53.75%;
+    }
+
+    &__body {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        padding-top: 5rem;
+
+        &--title {
+            @extend .index__text--title;
+            color: black;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+        }
+
+        &--text {
+            @extend .index__text--description;
+            color: black;
+        }
+    }
+
+    /*FOOTER*/
+
+    &__footer {
+        @extend .index__footer;
+        background-image: linear-gradient(to bottom, white, grey);
+
+        &--h3 {
+            @extend .index__footer--h3;
+            color: black;
+        }
+
+        &--img {
+            @extend .index__footer--img;
+        }
+
+        &--text {
+            @extend .index__footer--text;
+            color: black;
+        }
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(108%);
+}
+
+.carousel-altura {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.galeria__header {
+    @extend .ballet;
+    background-image: url(../resources/img/fondogaleria.png);
+    background-color: white;
+}
+
+.galeria {
+    &--title {
+        @extend .ballet--title;
+        background-color: transparent;
+    }
+
+    &--subtitle {
+        @extend .ballet--subtitle;
+        background-color: transparent;
+    }
+}
+
+.footer__white {
+    background-color: transparent;
+    color: black;
+
+    &:hover {
+        font-size: 20px;
+        color: rgb(248, 125, 146);
+    }
+}
+
+.footer__lineheight {
+    margin-top: 50px;
+}
+
+
+/* -------------------------------------BALLET-------------------------------------  */
+/* HEADER */
+.escuela__header {
+    @extend .galeria__header;
+    background-image: url(../resources/escuela/escuela01.jpeg);
+    width: 100vw;
+}
+
+.escuela {
+    &--title {
+        @extend .ballet--title;
+    }
+
+    &--subtitle {
+        @extend .ballet--subtitle;
+    }
+
+}
+
+.escuela__body {
+    padding-top: 3rem;
+
+    &--title {
+        @extend .ballet__body--title;
+        font-size: 30px;
+    }
+
+    &--text {
+        @extend .index__text--description;
+        color: black;
+    }
+}
+
+.contacto__body {
+    padding: 2rem;
+    padding-top: 10rem;
+    height: 100vh;
+
+    &--text {
+        @extend .escuela__body--text;
+        font-size: 15px;
+    }
+}
