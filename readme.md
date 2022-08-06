@@ -7,6 +7,5 @@
     <li>HTML5</li>
     <li>CSS3</li>
     <li>Bootstrap</li>
-    <li>Node.JS</li>
     <li>SASS</li>
 </ul>
