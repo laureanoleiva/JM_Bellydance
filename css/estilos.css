@@ -189,3 +189,19 @@
   height: 100vh; }
   .contacto__body--text {
     font-size: 15px; }
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .index__header--title, .ballet--title, .galeria--title, .escuela--title {
+    font-size: 60px;
+    top: 70%; }
+  .index__header--subtitle, .ballet--subtitle, .galeria--subtitle, .escuela--subtitle {
+    font-size: 20px;
+    top: 70%; } }
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .index__header--title, .ballet--title, .galeria--title, .escuela--title {
+    font-size: 120px;
+    top: 82%; }
+  .index__header--subtitle, .ballet--subtitle, .galeria--subtitle, .escuela--subtitle {
+    font-size: 30px;
+    top: 80%; } }
