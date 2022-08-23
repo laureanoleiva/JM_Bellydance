@@ -1,12 +1,9 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Cinzel', serif; }
 
-/* BARRA DE NAVEGACIÓN */
-/* HOME */
 .navegation {
   height: 0px; }
 
@@ -32,23 +29,17 @@
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
-/* ESCUELA */
-.nav__white {
-  color: black; }
-
-/* -------------------------------------HOME-------------------------------------  */
-/*HEADER*/
 .index {
   background-color: black;
   /*FOOTER*/ }
-  .index__header, .ballet, .galeria__header, .escuela__header {
+  .index__header, .ballet, .galeria__header, .escuela__header, .contacto__header {
     background-image: url(../resources/img/julimarlene.jpeg);
     height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
-    .index__header--title, .ballet--title, .galeria--title, .escuela--title {
+    .index__header--title, .ballet--title, .galeria--title, .contacto--title, .escuela--title {
       color: azure;
       text-align: center;
       font-size: 150px;
@@ -107,13 +98,11 @@
     font-size: 20px;
     color: pink; }
 
-/* -------------------------------------BALLET-------------------------------------  */
-/* HOME */
-.ballet, .galeria__header, .escuela__header {
+.ballet, .galeria__header, .escuela__header, .contacto__header {
   background-color: white;
-  background-image: url(../resources/Ballet/fondoballet.jpg);
+  background-image: url(../resources/Ballet/fondoballet.jpeg);
   /*FOOTER*/ }
-  .ballet--title, .galeria--title, .escuela--title {
+  .ballet--title, .galeria--title, .contacto--title, .escuela--title {
     color: black;
     background-color: rgba(255, 255, 255, 0.486);
     font-size: 100px;
@@ -150,11 +139,11 @@
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
-.galeria__header, .escuela__header {
-  background-image: url(../resources/img/fondogaleria.png);
+.galeria__header, .escuela__header, .contacto__header {
+  background-image: url(../resources/img/fondogaleria.jpeg);
   background-color: white; }
 
-.galeria--title {
+.galeria--title, .contacto--title {
   background-color: transparent; }
 
 .galeria--subtitle {
@@ -170,11 +159,11 @@
 .footer__lineheight {
   margin-top: 50px; }
 
-/* -------------------------------------BALLET-------------------------------------  */
-/* HEADER */
+.nav__white {
+  color: black; }
+
 .escuela__header {
-  background-image: url(../resources/escuela/escuela01.jpeg);
-  width: 100vw; }
+  background-image: url(../resources/escuela/escuela01.jpeg); }
 
 .escuela__body {
   padding-top: 3rem; }
@@ -190,8 +179,14 @@
   .contacto__body--text {
     font-size: 15px; }
 
+.btn {
+  margin: 0.5rem; }
+
+.form-floating {
+  margin: 0.5rem; }
+
 @media (min-width: 320px) and (max-width: 576px) {
-  .index__header--title, .ballet--title, .galeria--title, .escuela--title {
+  .index__header--title, .ballet--title, .galeria--title, .contacto--title, .escuela--title {
     font-size: 60px;
     top: 70%; }
   .index__header--subtitle, .ballet--subtitle, .galeria--subtitle, .escuela--subtitle {
@@ -199,7 +194,7 @@
     top: 70%; } }
 
 @media (min-width: 577px) and (max-width: 991px) {
-  .index__header--title, .ballet--title, .galeria--title, .escuela--title {
+  .index__header--title, .ballet--title, .galeria--title, .contacto--title, .escuela--title {
     font-size: 120px;
     top: 82%; }
   .index__header--subtitle, .ballet--subtitle, .galeria--subtitle, .escuela--subtitle {

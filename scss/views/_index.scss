@@ -1,0 +1,140 @@
+.navegation {
+    height: 0px;
+}
+
+.img__navbar:hover {
+    width: 65px;
+    height: 65px;
+}
+
+.nav__colorblack {
+    background-color: transparent;
+}
+
+.nav-link {
+    color: white;
+    font-size: 25px;
+    margin-right: 100px;
+
+    &:hover {
+        color: grey;
+        font-size: 26px;
+    }
+}
+
+.collapse {
+    justify-content: space-around;
+}
+
+.container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.index {
+    background-color: black;
+
+    &__header {
+        background-image: url(../resources/img/julimarlene.jpeg);
+        height: 100vh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        &--title {
+            color: azure;
+            text-align: center;
+            font-size: 150px;
+            font-family: 'Great Vibes', cursive;
+            font-weight: 500;
+            position: relative;
+            top: 50%;
+        }
+
+        &--subtitle {
+            color: azure;
+            text-align: center;
+            font-size: 45px;
+            font-weight: 100;
+            position: relative;
+            top: 50%;
+        }
+    }
+
+    &__text {
+        background-color: black;
+        background-image: url(../resources/img/fondo_index.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+        background-position: center;
+        height: 100%;
+        margin-top: 5rem;
+
+        &--title {
+            color: azure;
+            font-size: 40px;
+            margin: 10px;
+        }
+
+        &--description {
+            color: azure;
+            font-size: 20px;
+            text-align: justify;
+            margin: 10px;
+        }
+    }
+
+    /*FOOTER*/
+    &__footer {
+        background-image: linear-gradient(to bottom, black, grey);
+        padding-top: 2rem;
+
+
+        &--img {
+            height: 40px;
+            width: 40px;
+
+            &:hover {
+                height: 50px;
+                width: 50px;
+            }
+        }
+
+        &--h3 {
+            color: white;
+            margin-top: 50px;
+        }
+
+        &--col {
+            line-height: 100px;
+        }
+
+        &--text {
+            @extend .index__text--description;
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+
+    .list-group {
+        &-item-personal {
+            background-color: transparent;
+            color: white;
+        }
+
+        &__lineheight {
+            margin-top: 50px;
+        }
+
+        &-item:hover {
+            font-size: 20px;
+            color: pink;
+        }
+    }
+}
+
+.list-group-item {
+    @extend .list-group-item-personal
+}

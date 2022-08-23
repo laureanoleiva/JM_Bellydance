@@ -1,0 +1,31 @@
+.galeria__header {
+    @extend .ballet;
+    background-image: url(../resources/img/fondogaleria.jpeg);
+    background-color: white;
+}
+
+.galeria {
+    &--title {
+        @extend .ballet--title;
+        background-color: transparent;
+    }
+
+    &--subtitle {
+        @extend .ballet--subtitle;
+        background-color: transparent;
+    }
+}
+
+.footer__white {
+    background-color: transparent;
+    color: black;
+
+    &:hover {
+        font-size: 20px;
+        color: rgb(248, 125, 146);
+    }
+}
+
+.footer__lineheight {
+    margin-top: 50px;
+}

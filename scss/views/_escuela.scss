@@ -1,0 +1,38 @@
+.nav__white {
+    @extend .nav-link;
+    color: black;
+
+    &:hover {
+        @extend .nav-link:hover;
+    }
+}
+
+.escuela__header {
+    @extend .galeria__header;
+    background-image: url(../resources/escuela/escuela01.jpeg);
+}
+
+.escuela {
+    &--title {
+        @extend .ballet--title;
+    }
+
+    &--subtitle {
+        @extend .ballet--subtitle;
+    }
+
+}
+
+.escuela__body {
+    padding-top: 3rem;
+
+    &--title {
+        @extend .ballet__body--title;
+        font-size: 30px;
+    }
+
+    &--text {
+        @extend .index__text--description;
+        color: black;
+    }
+}

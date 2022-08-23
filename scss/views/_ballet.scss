@@ -1,0 +1,72 @@
+.ballet {
+    @extend .index__header;
+    background-color: white;
+    background-image: url(../resources/Ballet/fondoballet.jpeg);
+
+    &--title {
+        @extend .index__header--title;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.486);
+        font-size: 100px;
+        top: 55%;
+    }
+
+    &--subtitle {
+        @extend .index__header--subtitle;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.486);
+        font-size: 30px;
+        top: 53.75%;
+    }
+
+    &__body {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        padding-top: 5rem;
+
+        &--title {
+            @extend .index__text--title;
+            color: black;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+        }
+
+        &--text {
+            @extend .index__text--description;
+            color: black;
+        }
+    }
+
+    /*FOOTER*/
+
+    &__footer {
+        @extend .index__footer;
+        background-image: linear-gradient(to bottom, white, grey);
+
+        &--h3 {
+            @extend .index__footer--h3;
+            color: black;
+        }
+
+        &--img {
+            @extend .index__footer--img;
+        }
+
+        &--text {
+            @extend .index__footer--text;
+            color: black;
+        }
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(108%);
+}
+
+.carousel-altura {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
