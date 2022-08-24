@@ -10,6 +10,26 @@
             top: 70%;
         }
     }
+
+    .index__text {
+        &--title {
+            font-size: 25px;
+            margin: 15px;
+        }
+
+        &--description {
+            font-size: 15px;
+            margin: 15px;
+        }
+    }
+
+    .video {
+        width: 350px;
+        height: 200px;
+    }
+
+    .carreraprof{flex-direction: column-reverse;}
+
 }
 
 @media (min-width: 577px) and (max-width: 991px) {

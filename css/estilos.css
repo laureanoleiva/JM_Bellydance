@@ -191,7 +191,18 @@
     top: 70%; }
   .index__header--subtitle, .ballet--subtitle, .galeria--subtitle, .escuela--subtitle {
     font-size: 20px;
-    top: 70%; } }
+    top: 70%; }
+  .index__text--title, .ballet__body--title, .escuela__body--title {
+    font-size: 25px;
+    margin: 15px; }
+  .index__text--description, .index__footer--text, .ballet__footer--text, .ballet__body--text, .escuela__body--text, .contacto__body--text {
+    font-size: 15px;
+    margin: 15px; }
+  .video {
+    width: 350px;
+    height: 200px; }
+  .carreraprof {
+    flex-direction: column-reverse; } }
 
 @media (min-width: 577px) and (max-width: 991px) {
   .index__header--title, .ballet--title, .galeria--title, .contacto--title, .escuela--title {
